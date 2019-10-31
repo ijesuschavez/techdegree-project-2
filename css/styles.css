@@ -1,30 +1,39 @@
+/* all body */
 body {
-  position: absolute;
   background-color: #f2f2f2;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
 }
 
+p {
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+/* Header Stlying */
 .container, .intro {
   margin: 0 auto;
   width: 90%;
   text-align: center;
+
 }
 h1, nav a {
-color: red;
 margin: 0 auto;
 display: block;
 text-align: center;
-margin-bottom: .5em;
 padding: 1em;
+text-decoration: none;
+font-weight: 800;
+color: #262626
 }
-
-img {
-  max-width: 100%;
+a:link, a:visited {
+  text-transform: uppercase;
+  color: inherit;
 }
 
 nav a {
   background-color: white;
+  margin-bottom: .5em;
 }
 
 .banner {
@@ -38,7 +47,16 @@ nav a {
 
 .intro {
   padding: 1em 0 3em;
+  color: #262626;
+  font-weight: 500;
 }
+
+a {
+  font-size: .9em;
+}
+
+/* main section */
+
 .pages {
   background: white;
   width: 100%;
@@ -47,48 +65,87 @@ nav a {
 }
 
 .heading-1 {
-  margin: 1.5em 0;
+  margin: 2em 0;
+  text-transform: uppercase;
+  font-size: .9em;
+}
+
+img {
+  max-width: 100%;
 }
 
 .container img {
   padding: .75em 0;
 }
 
+/* contact section */
 .contact {
   padding: 2em 0;
-
 }
-
-.contact ul {
-  padding-inline-start: 0;
+.contact h2 {
+  margin: 2em 0 1em;
+  text-transform: uppercase;
+  font-size: .9em;
 }
-
-.contact-info li {
-  display: inline-block;
-  text-align: center;
-}
-
 .contact p {
+  color: #262626;
   padding: 1em 0;
+}
+.contact ul {
+  display: block;
+  padding-left: 0;
+}
+.contact li {
+  padding-inline-start: 0;
+  display: inline-block;
+}
+
+.method {
+
+  text-align: center;
+  color: #262626;
+  font-weight: lighter;
 }
 
 .info {
-  margin-right: .5em;
+  margin-left: .5em;
+  font-weight: 800;
+  color: #262626;
+}
+
+/* footer */
+
+hr {
+  width: 90%;
 }
 
 footer {
   margin: 1.5em 0;
+  font-weight: 800;
+  padding: 1.5em 0;
 }
 
 footer span {
   float: left;
+  font-size: .9em;
 }
 
 footer a {
   float: right;
+  text-decoration: none;
+  margin: 0 auto;
 }
 
+/* Media Query - Mid */
+@media (min-width: 768px) {
 
+}
+
+/* Media Query - Big */
+@media (min-width: 1024px) {
+
+}
+/* clearfix */
 .clearfix::after {
   content: "";
   display: table;
