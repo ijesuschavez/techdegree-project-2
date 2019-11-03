@@ -8,12 +8,13 @@ body {
 p {
   line-height: 1.5em;
   margin-bottom: 1.5em;
+  font-size: 1.1em;
 }
 
 /* Header Stlying */
 .container, .intro {
   margin: 0 auto;
-  width: 90%;
+  width: 95%;
   text-align: center;
 
 }
@@ -130,19 +131,115 @@ footer span {
   font-size: .9em;
 }
 
-footer a {
+footer .top {
   float: right;
   text-decoration: none;
   margin: 0 auto;
 }
 
+@media screen and (max-width: 768px) {
+  .footmenu {
+    display: none;
+  }
+}
+
 /* Media Query - Mid */
 @media (min-width: 768px) {
 
+.container, .banner {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2em;
+
+}
+nav a {
+  display: inline;
+  background-color: inherit;
+    }
+
+.banner {
+  padding: 1em;
+}
+.banner img {
+  float: right;
+  width: 50%;
+  margin-left: .5em;
 }
 
+.banner p {
+  margin: 0;
+}
+
+.coll {
+  float: left;
+  width: 49%;
+  padding-right: 2%;
+
+}
+.colr {
+  float: right;
+  width: 49%
+}
+
+footer .top {
+  display: none;
+}
+
+.footmenu a {
+  padding-left: 1em;
+  text-decoration: none;
+}
+
+.footmenu {
+  float: right;
+  margin: 0 auto;
+}
+
+}
 /* Media Query - Big */
 @media (min-width: 1024px) {
+
+.container, .banner {
+  width: 80%;
+}
+
+.banner {
+  margin-top: 0;
+}
+
+.banner img {
+  margin-left: 1em;
+}
+
+.main-nav .name {
+  float: left;
+}
+
+.main-nav .topnav {
+  float: right;
+  margin: 0 auto;
+  display: block;
+  padding: 32px 0;
+  margin-top: 10px;
+}
+.main-nav a {
+  padding: 0 0 0 30px;
+}
+
+.coli {
+  float: left;
+  width: 32%;
+  padding-right: 2%
+}
+
+.colii {
+  width: 32%;
+}
+
+.coliii {
+  width: 32%;
+}
+
 
 }
 /* clearfix */
