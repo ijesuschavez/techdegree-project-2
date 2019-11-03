@@ -136,11 +136,10 @@ footer .top {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 768px) {
-  .footmenu {
-    display: none;
-  }
+.footmenu {
+  display: none;
 }
+
 
 /* Media Query - Mid */
 @media (min-width: 768px) {
@@ -180,7 +179,7 @@ nav a {
   width: 49%
 }
 
-footer .top {
+.top {
   display: none;
 }
 
@@ -190,6 +189,7 @@ footer .top {
 }
 
 .footmenu {
+  display: inline-block;
   float: right;
   margin: 0 auto;
 }
@@ -239,6 +239,9 @@ footer .top {
   width: 32%;
 }
 
+.container, .banner, hr, .footer {
+  max-width: 1560px;
+}
 
 }
 /* clearfix */
